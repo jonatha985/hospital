@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Login - Equipe Médica {% endblock title %}
+
+{% block titulo %}Login - Equipe Médica{% endblock titulo %}
+
+{% block conteudo %}
+<div><h2>BEM VINDO AO MÓDULO DA EQUIPE MÉDICA</h2></div>
+<div><h3>INSIRA SUAS CREDENCIAS PARA PROSSEGUIR</h3></div>
+<div>
+    <form class="form" action="{% url 'login_doctor' %}" method="post">
+      {% csrf_token %}
+      <img src="{% static 'img/doutor.png' %}" width="50em" height="50em" alt="" class="img_topo">
+      <input type="text" name="nome" placeholder="Usuário">
+      <input type="password" name="senha" placeholder="Senha">
+    
+      <input style="background-color: blueviolet; color: white;" type="submit" value="Entrar"> 
+      <p></p>
+      <p></p>
+    </form>
+</div>
+
+
+
+{% endblock conteudo %}
+
+

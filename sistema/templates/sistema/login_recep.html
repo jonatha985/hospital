@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Login - Recepcionista {% endblock title %}
+
+{% block titulo %}Login - Recepcionista{% endblock titulo %}
+
+{% block conteudo %}
+<div><h2>BEM VINDO AO MÓDULO DE ATENDIMENTO</h2></div>
+<div><h3>INSIRA SUAS CREDENCIAS PARA PROSSEGUIR</h3></div>
+<div>
+    <form class="form" action="{% url 'login_recep' %}" method="post">
+      {% csrf_token %}
+      <img src="{% static 'img/recepcionista.png' %}" width="50em" height="50em" alt="" class="img_topo">
+      <input type="text" name="nome" placeholder="Usuário">
+      <input type="password" name="senha" placeholder="Senha">
+    
+      <input style="background-color: blueviolet; color: white;" type="submit" value="Entrar"> 
+      <p></p>
+      <p></p>
+    </form>
+</div>
+
+{% endblock conteudo %}
+
+

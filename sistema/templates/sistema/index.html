@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Login {% endblock title %}
+
+{% block titulo %}SELECIONE UM MÓDULO{% endblock titulo %}
+
+{% block conteudo %}
+
+    <section class="counter">
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <a href="{% url 'login_admin' %}">
+                        <i>
+                            <img src="{% static 'img/hospital.png' %}" width="90em" height="90em" alt="">
+                            <h3>ADMIN</h3>
+                        </i>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <a href="{% url 'login_doctor' %}">
+                        <i>
+                            <img src="{% static 'img/doutor.png' %}" width="90em" height="90em" alt="">
+                            <h3>EQUIPE MÉDICA</h3>
+                        </i>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <a href="{% url 'login_recep' %}">
+                        <i>
+                            <img src="{% static 'img/recepcionista.png' %}" width="90em" height="90em" alt="">
+                            <h3>RECEPCIONISTA</h3>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="aten">
+            <h3 class="atention">Atenção</h3>
+        </div>
+        <div class="aviso">
+            <p class="msg">Apenas usuários validados poderão acessar o sistema</p>
+        </div>
+    </section>
+
+{% endblock conteudo %}

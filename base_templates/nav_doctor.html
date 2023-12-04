@@ -1,0 +1,22 @@
+{% load static %}
+{% if user.is_authenticated %}
+<nav class="menu" style="display: flex; justify-content: space-around;">
+    <ul style=" flex: 80%;">
+        <li><a href="{% url 'inicio' %}"  class="{% if request.resolver_match.url_name == 'inicio' %} nav_links{% endif %}">Home</a></li>
+        <li><a href="{% url 'login' %}" class="{% if request.resolver_match.url_name == 'login' %} nav_links{% endif %}">Contato</a></li>
+        <li><a href="{% url 'sobre' %}" class="{% if request.resolver_match.url_name == 'sobre' %} nav_links{% endif %}">Sobre Nós</a></li>
+        <li><a href="{% url 'dash_doctor' %}" class="{% if request.resolver_match.url_name == 'dash_doctor' %} nav_links{% endif %}">Meu Painel</a></li>
+    </ul>
+    <a href="{% url 'sair' %}"><button style="height: 20px; margin-right: 10px;">Sair</button></a>
+</nav>
+{% else %}
+
+<nav class="menu" style="display: flex; justify-content: space-around;">
+    <ul style=" flex: 80%;">
+        <li><a href="{% url 'inicio' %}"  class="{% if request.resolver_match.url_name == 'inicio' %} nav_links{% endif %}">Inicio</a></li>
+        <li><a href="{% url 'login' %}" class="{% if request.resolver_match.url_name == 'login' %} nav_links{% endif %}">Contato</a></li>
+        <li><a href="{% url 'sobre' %}" class="{% if request.resolver_match.url_name == 'sobre' %} nav_links{% endif %}">Sobre Nós</a></li>
+    </ul>
+    <a href="{% url 'index' %}"><button style="height: 20px; margin-right: 10px;">Login</button></a>
+</nav>
+{% endif %}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.success {
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.navegacao a.linkAtivo {
+    color: green
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsla(122, 100%, 51%, 0.099);
+}
+
+nav {
+    background-color: black;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-wrap: wrap;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+li a:hover {
+    background-color: rgba(000099, 000099, 000099, 0.8);
+    height: 100%;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 3em;
+    color: rgb(168, 0, 143);
+    text-shadow: 0.02em 0.02em 0.05em rgba(20, 7, 4, 0.8);
+    padding: 0.5em;
+}
+
+main {
+    padding: 2em 2em 4em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.form .autt{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form input{
+    padding: 7px;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 5em;
+}
+
+.excluir:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bolder;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    padding: 0.20em;
+    font-size: 0.8em;
+    box-shadow: 0.1em 0.1em 0.2em darkblue;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 2em;
+    width: 100vw;
+}
+
+.link-nav-active {
+    color: green;
+}
+
+.menu img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.counter .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.counter .box-container .box{
+    margin: 2rem 5rem;
+    text-align: center;
+}
+.counter .box-container .box i{
+    color: var(--blue);
+    font-size: 5rem;
+}
+.counter .box-container .box span{
+    color: var(--black);
+    font-size: 3rem;
+    display: block;
+    padding: 1rem 0;
+}
+.counter .box-container .box h3{
+    color: #666;
+}
+
+.aten{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.atention{
+    color: red;
+    align-items: center;
+}
+.aviso{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.msg{
+    color: red;
+    align-items: center;
+}
+.form{
+    width: 300px;
+    background-color: green;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.form .autt{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form input{
+    padding: 7px;
+}
+.img_topo{
+    align-items: center;
+    align-self: center;
+}
+
+.counter2 .box-container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.counter2 .box-container2 .box2{
+    margin: 0 3rem;
+    text-align: center;
+}
+.counter2 .box-container2 .box2 i{
+    color: var(--blue);
+    font-size: 5rem;
+}
+.counter2 .box-container2 .box2 span{
+    color: var(--black);
+    font-size: 3rem;
+    display: block;
+    padding: 1rem 0;
+}
+.counter2 .box-container2 .box2 h3{
+    color: #666;
+}

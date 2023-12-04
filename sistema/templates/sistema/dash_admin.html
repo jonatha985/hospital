@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Login {% endblock title %}
+
+{% block titulo %}Olá {{ user.username }} {% endblock titulo %}
+
+{% block conteudo %}
+<section class="counter2">
+    <div class="container2">
+        <div class="box-container2">
+            <div class="box2">
+                <a href="{% url 'add_recepcionista' %}">
+                    <i>
+                        <img src="{% static 'img/recepcionista.png' %}" width="90em" height="90em" alt="">
+                        <h3>Adicionar Recepcionista</h3>
+                    </i>
+                </a>
+            </div>
+
+            <div class="box2">
+                <a href="{% url 'add_doctor' %}">
+                    <i>
+                        <img src="{% static 'img/doutor.png' %}" width="90em" height="90em" alt="">
+                        <h3>Adicionar Profissional</h3>
+                    </i>
+                </a>
+            </div>
+
+            <div class="box2">
+                <a href="{% url 'listar_profissionais' %}">
+                    <i>
+                        <img src="{% static 'img/doutor.png' %}" width="90em" height="90em" alt="">
+                        <h3>Listar</h3>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock conteudo %}

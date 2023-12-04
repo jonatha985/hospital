@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Fazer Login{% endblock titulo %}
+
+{% block conteudo %}
+
+<div class="login">
+    <form method="POST" class="form">
+        <h1 class="titulo">ENTRAR</h1>
+        <div class="um">
+            <label for="" class="form_label">Email:
+                <input type="text" name="Email"/>
+            </label>
+        </div>
+        <div class="um">
+            <label for="" class="form_label">CPF
+                <input type="number" name="CPF">
+            </label>
+        </div>
+        <div class="um">
+            <label for="" class="form_label">Senha
+                <input type="password" name="senha">
+            </label>
+        </div>
+
+        <div id="captcha" class="um">
+            <div class="preview"></div>
+            <div class="captcha">
+                <label for="" class="form_label">Insira o captcha</label>
+                <input type="text" class="captcha_form_input" id="captcha_form">
+
+                <button class="captcha_refresh">
+                    <i class="fa fa_refresh"></i>
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+
+<a href="{% url 'cadastro' %}"><button style="height: 20px; margin-right: 10px;">Cadastro</button></a>
+
+
+{% endblock conteudo %}
+
